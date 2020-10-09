@@ -1,0 +1,20 @@
+/*==========RESET==========*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*==========HEADER==========*/
+.header {max-width: 900px; margin: 0 auto;}
+.cabecalho {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin: 20px 0;}
+.menu {display: flex;}
+.menu li {list-style: none;}
+.menu li + li {margin-left: 15px;}
+/*==========CONTENT==========*/
+.content {max-width: 900px; margin: 0 auto;}
+.content h1 {margin: 30px 0;}
+.content p {margin: 15px 0;}
+.content ol li {margin-left: 50px;}
+.content hr {margin: 15px 0;}
+/*==========FOOTER==========*/
+.footer {max-width: 900px; margin: 30px auto; text-align: center; }
+
