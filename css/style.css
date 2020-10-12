@@ -2,19 +2,37 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 /*==========HEADER==========*/
-.header {max-width: 900px; margin: 0 auto;}
+.header {width: 900px; margin: 0 auto; padding: 0 10px;}
 .cabecalho {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin: 20px 0;}
 .menu {display: flex;}
 .menu li {list-style: none;}
 .menu li + li {margin-left: 15px;}
+@media screen and (max-width: 600px){
+    .header {width: 100%;}
+    .cabecalho {flex-direction: column;}
+    .header .cabecalho img {width: 150px; margin-bottom: 20px;}
+}
+@media screen and (min-width: 601px) and (max-width: 910px){
+    .header {width: 100%;}
+    .cabecalho {flex-direction: row;}
+}
 /*==========CONTENT==========*/
-.content {max-width: 900px; margin: 0 auto;}
+.content {width: 900px; margin: 0 auto;}
 .content h1 {margin: 30px 0;}
-.content p {margin: 15px 0;}
+.content p {margin: 15px 0; text-align: justify;}
 .content ol li {margin-left: 50px;}
 .content hr {margin: 15px 0;}
+@media screen and (max-width: 600px){
+    .content {width: 100%; padding: 10px;}
+    .capa img {width: 100%;}
+}
+@media screen and (min-width: 601px) and (max-width: 910px){
+    .content {width: 100%; padding: 10px;}
+    .capa img {width: 100%;}
+}
 /*==========FOOTER==========*/
 .footer {max-width: 900px; margin: 30px auto; text-align: center; }
 
